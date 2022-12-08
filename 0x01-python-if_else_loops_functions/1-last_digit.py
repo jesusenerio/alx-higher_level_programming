@@ -3,17 +3,16 @@ import random
 number = random.randint(-10000, 10000)
 
 # get the last digit of the number
-num = int(str(number)[-1])
+num = abs(number) % 10
 
 # check if the num is less than 6 then print
-if num < 6 and num != 0:
-    print("Last digit of {} is {} and is less \
-            than 6 and not 0".format(number, num))
-
+if num == 0:
+    print(f"Last digit of {number:d} is {num:d} and is 0")
+elif number < 0:
+    num = -num
+    print(f"Last digit of {number:d} is {num:d} and is less than 6 and not 0")
 # check if num is 0 then print
-elif num == 0:
-    print("Last digit of {} is {} and is 0".format(number, num))
-
-# check if num is greater than 5 then print
+elif num > 5:
+    print(f"Last digit of {number:d} is {num:d} and is greater than 5")
 else:
-    print("Last digit of {} is {} and is greater than 5".format(number, num))
+    print(f"Last digit of {number:d} is {num:d} and is less than 6 and not 0")
