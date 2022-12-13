@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-import add_0
-from add_0 import add
-num = add(1, 2)
-print("1 + 2 = {}".format(num))
+if __name__ == "__main__":
+    from add_0 import add
+    a = 1
+    b = 2
+    num = add(a, b)
+    print("{} + {} = {}".format(a, b, num))
