@@ -1,1 +1,1 @@
-this is higher level programming for python
+this is an almost a circle project
