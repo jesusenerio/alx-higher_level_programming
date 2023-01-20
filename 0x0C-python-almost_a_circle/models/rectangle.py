@@ -94,7 +94,7 @@ class Rectangle(Base):
             [print("#", end="") for w in range(self.width)]
             print("")
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """Upadate the rectangle.
 
 
